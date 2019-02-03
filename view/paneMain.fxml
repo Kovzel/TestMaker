@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:controller="controller.ControllerMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="385.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/8.0.1"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="830.0" fitWidth="463.0">
+            <image>
+                <Image url="@background.jpg"/>
+            </image>
+        </ImageView>
+        <MenuBar prefHeight="25.0" prefWidth="463.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem onAction="#createQuestions" mnemonicParsing="false" text="Create"/>
+                        <MenuItem onAction="#findTests" mnemonicParsing="false" text="Find"/>
+                        <MenuItem onAction="#exit" mnemonicParsing="false" text="Exit"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Test">
+                    <items>
+                        <MenuItem onAction="#restart" mnemonicParsing="false" text="Restart"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label fx:id="label" layoutX="14.0" layoutY="39.0" prefHeight="94.0" prefWidth="435.0" textFill="WHITE"
+               wrapText="true"
+               text="Welcome to &quot;TestMaker&quot;! Do you want to start with test creation or choose an existing one?">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Button onAction="#buttonAction" fx:id="button1" layoutX="14.0" layoutY="156.0" mnemonicParsing="false"
+                prefHeight="93.5" prefWidth="435.0" text="Choose test">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button onAction="#buttonAction" fx:id="button2" layoutX="14.0" layoutY="277.0" mnemonicParsing="false"
+                prefHeight="93.5" prefWidth="435.0" text="Create test">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button onAction="#buttonAction" visible="false" fx:id="button3" mnemonicParsing="false">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button onAction="#buttonAction" visible="false" fx:id="button4" mnemonicParsing="false">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button onAction="#buttonAction" visible="false" fx:id="button5" mnemonicParsing="false">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button onAction="#buttonAction" visible="false" fx:id="button6" mnemonicParsing="false">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button onAction="#buttonAction" visible="false" fx:id="button7" mnemonicParsing="false">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button onAction="#buttonAction" visible="false" fx:id="button8" mnemonicParsing="false">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button onAction="#buttonAction" visible="false" fx:id="button9" mnemonicParsing="false">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+    </children>
+</Pane>

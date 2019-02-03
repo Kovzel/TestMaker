@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:controller="controller.ControllerCreateQuestions" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="463.0"
+      xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="463.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem onAction="#ready" mnemonicParsing="false" text="Ready"/>
+                        <MenuItem onAction="#reset" mnemonicParsing="false" text="Reset"/>
+                        <MenuItem onAction="#cancel" mnemonicParsing="false" text="Cancel"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Add">
+                    <items>
+                        <MenuItem onAction="#addQuestion" mnemonicParsing="false" text="+ Question"/>
+                        <MenuItem onAction="#takeAwayQuestion" mnemonicParsing="false" text="- Question"/>
+                        <MenuItem onAction="#changeNumberAnswers" mnemonicParsing="false" text="+ Answer"/>
+                        <MenuItem onAction="#changeNumberAnswers" mnemonicParsing="false" text="- Answer"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem onAction="#help" mnemonicParsing="false" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TextArea fx:id="textArea" layoutX="14.0" layoutY="39.0" prefHeight="94.0" prefWidth="435.0"
+                  promptText="Question">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextArea>
+        <TextField fx:id="textField1" alignment="CENTER" layoutX="14.0" layoutY="156.0" prefHeight="93.5"
+                   prefWidth="435.0" promptText="Answer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="textField2" alignment="CENTER" layoutX="14.0" layoutY="277.0" prefHeight="93.5"
+                   prefWidth="435.0" promptText="Answer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="textField3" visible="false" alignment="CENTER" layoutX="14.0" layoutY="237.0"
+                   prefHeight="53.0" prefWidth="133.0" promptText="Answer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="textField4" visible="false" alignment="CENTER" layoutX="165.0" layoutY="237.0"
+                   prefHeight="53.0" prefWidth="133.0" promptText="Answer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="textField5" visible="false" alignment="CENTER" layoutX="316.0" layoutY="157.0"
+                   prefHeight="53.0" prefWidth="133.0" promptText="Answer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="textField6" visible="false" alignment="CENTER" layoutX="316.0" layoutY="237.0"
+                   prefHeight="53.0" prefWidth="133.0" promptText="Answer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="textField7" visible="false" alignment="CENTER" layoutX="14.0" layoutY="318.0"
+                   prefHeight="53.0" prefWidth="133.0" promptText="Answer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="textField8" visible="false" alignment="CENTER" layoutX="165.0" layoutY="318.0"
+                   prefHeight="53.0" prefWidth="133.0" promptText="Answer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="textField9" visible="false" alignment="CENTER" layoutX="316.0" layoutY="318.0"
+                   prefHeight="53.0" prefWidth="133.0" promptText="Answer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+    </children>
+</Pane>
