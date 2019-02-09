@@ -93,7 +93,6 @@ public class TestHome {
         getDBConnection();
         Connection dbConnection = null;
         String sql = "select * from test";
-        String sq2 = "select round(AVG(rating)::numeric,2) from test";
         try {
             dbConnection = getDBConnection();
             Statement statement = dbConnection.createStatement();

@@ -3,10 +3,10 @@ package sample;
 import java.sql.*;
 
 class DBWorker {
-    static final String DB_CONNECTION = "jdbc:postgresql://127.0.0.1:5432/testMaker";
-    static final String DB_USER = "postgres";
-    static final String DB_PASSWORD = "Admin1234";
-    static final String DB_DRIVER = "org.postgresql.Driver";
+    static final String DB_CONNECTION = "jdbc:mysql://sql7.freesqldatabase.com/sql7278177";
+    static final String DB_USER = "sql7278177";
+    static final String DB_PASSWORD = "ljhpayjNpm";
+    static final String DB_DRIVER = "com.mysql.jdbc.Driver";
 
     static Connection getDBConnection() {
         Connection dbConnection = null;
